@@ -5,7 +5,7 @@ clear;
 %利用ransac+3D位姿估计的方法求解最佳位姿;
 
 %生成测试数据;
-npt=10;  %测试数据的个数
+npt=20;  %测试数据的个数
 Xc  = [xrand(1,npt,[-2 2]); xrand(1,npt,[-2 2]); xrand(1,npt,[4 8])];
 t   = mean(Xc,2)        %真实的位置         
 R   = rodrigues(randn(3,1))     %真实的姿态
